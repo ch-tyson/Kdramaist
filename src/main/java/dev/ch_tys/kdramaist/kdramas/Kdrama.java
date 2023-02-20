@@ -17,24 +17,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Kdrama {
     @Id
-    private ObjectId id;
+    private ObjectId _id;
     private String imdbId;
-    private String title;
+    private String name;
     private String releaseDate;
-    private String trailerLink;
+    private String trailer;
     private String poster;
     private List<String> backdrops;
-    private List<String> genres;
+    private List<String> genre;
     @DocumentReference
     private List<Review> reviews;
 
-    public Kdrama(String imdbId, String title, String releaseDate, String trailerLink, String poster, List<String> backdrops, List<String> genres) {
+    public Kdrama(String imdbId, String name, String releaseDate, String trailer, String poster, List<String> backdrops, List<String> genre) {
         this.imdbId = imdbId;
-        this.title = title;
+        this.name = name;
         this.releaseDate = releaseDate;
-        this.trailerLink = trailerLink;
+        this.trailer = trailer;
         this.poster = poster;
         this.backdrops = backdrops;
-        this.genres = genres;
+        this.genre = genre;
     }
 }

@@ -34,3 +34,4 @@ build/
 
 ### ENV FILES ###
 .env
+src/main/java/dev/ch_tys/kdramaist/kdramas/todo.txt
